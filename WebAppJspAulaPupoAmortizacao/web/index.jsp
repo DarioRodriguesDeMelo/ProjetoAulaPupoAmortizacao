@@ -12,11 +12,12 @@
         <title>Aula Pupo-Amortização</title>
     </head>
     <body>
-        <h1>trabalho em JSP para Aula do Pupo</h1><br><br>
+        <h1>Trabalho em JSP para Aula do Pupo</h1><br><br>
         
-        <a href="home.jsp">home</a><br>
-        <a href="amortizacao-americana.jsp">Amortização Americana</a><Br>
-        <a href="amortizacao-constante.jsp">Amortização constante</a><br>
-        <a href="tabela-Price.jsp">tabela Price</a>
+        
+        <a href="amortizacao-americana.jsp">Amortização Americana</a><br>
+        <a href="amortizacao-constante.jsp">Amortização Constante</a><br>
+        <a href="tabela-price.jsp">Tabela Price</a><br>
+        <a href="home.jsp">Sobre</a>
     </body>
 </html>

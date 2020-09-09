@@ -12,6 +12,12 @@
         <title>Aula Pupo - Amortização Constante</title>
     </head>
     <body>
+        <a href="index.jsp">Voltar</a>
         <h1>Amortização Constante</h1>
+        
+        <form name="formAmortizConst" action="" method="post">
+            <input type="number">
+            
+        </form>
     </body>
 </html>

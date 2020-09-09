@@ -12,7 +12,13 @@
         <title>Aula Pupo - Amortização Constante</title>
     </head>
     <body>
+        <a href="index.jsp">Voltar</a>
         <h1>Amortização Americana</h1>
+        
+        <form name="formAmortizAmerica" action="" method="post">
+            <input type="number">
+            
+        </form>
         
     </body>
 </html>

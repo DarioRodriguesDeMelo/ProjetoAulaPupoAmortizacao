@@ -12,7 +12,13 @@
         <title>Aula Pupo - Tabela Price</title>
     </head>
     <body>
+        <a href="index.jsp">Voltar</a>
         <h1>Tabela Price</h1>
+        
+        <form name="formTabPrice" action="" method="post">
+            <input type="number">
+            
+        </form>
         
     </body>
 </html>

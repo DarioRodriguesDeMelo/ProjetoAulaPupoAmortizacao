@@ -9,10 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Aula Pupo - Amortização Constante</title>
     </head>
     <body>
-        <h1>Amortização americana</h1>
+        <h1>Amortização Americana</h1>
         
     </body>
 </html>

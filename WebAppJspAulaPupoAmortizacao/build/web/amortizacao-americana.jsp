@@ -16,7 +16,9 @@
         <h1>Amortização Americana</h1>
         
         <form name="formAmortizAmerica" action="" method="post">
-            <input type="number">
+            
+            <input type="text" name="valor" placeholder="Digite o valor">
+            <input type="text" name="mesesAmort" placeholder="quantos meses">
             
         </form>
         

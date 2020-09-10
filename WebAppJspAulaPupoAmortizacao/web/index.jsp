@@ -14,10 +14,10 @@
     <body>
         <h1>Trabalho em JSP para Aula do Pupo</h1><br><br>
         
-        
+        <h2>Escolha um dos 3 tipos de financiamnetos disponíveis<h2/><br/>
         <a href="amortizacao-americana.jsp">Amortização Americana</a><br>
         <a href="amortizacao-constante.jsp">Amortização Constante</a><br>
-        <a href="tabela-price.jsp">Tabela Price</a><br>
+        <a href="tabela-price.jsp">Tabela Price</a><br><br/>
         <a href="home.jsp">Sobre</a>
     </body>
 </html>

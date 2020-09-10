@@ -16,8 +16,9 @@
         <h1>Amortização Constante</h1>
         
         <form name="formAmortizConst" action="" method="post">
-            <input type="number">
             
+            <input type="text" name="valor" placeholder="Digite o valor">
+            <input type="text" name="mesesAmort" placeholder="quantos meses">
         </form>
     </body>
 </html>

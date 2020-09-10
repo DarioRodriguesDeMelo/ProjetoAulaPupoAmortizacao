@@ -15,9 +15,14 @@
         <a href="index.jsp">Voltar</a>
         <h1>Tabela Price</h1>
         
-        <form name="formTabPrice" action="" method="post">
-            <input type="number">
+        <form name="formTabPrice" action="index.jsp" method="post">
+            <label>Valor do Financiamento</label><br/>
+            <input type="text" name="valor" min="0.00" placeholder="Digite o valor" size="10" maxlength="10">
+            <!--<input type="number" min="0.00" max="999,999.99" step="0.01" placeholder="Digite o valor" size="10" maxlength="10"/> -->
             
+            <input type="text" name="mesesAmort" id="inputidMesesprice" placeholder="número de meses">
+            <input type="text" name="TaxAmort" id="inputidtaxprice" placeholder="Taxa">
+            <input type="submit"
         </form>
         
     </body>

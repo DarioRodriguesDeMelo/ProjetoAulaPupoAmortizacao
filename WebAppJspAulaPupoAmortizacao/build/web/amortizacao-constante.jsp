@@ -18,7 +18,9 @@
         <form name="formAmortizConst" action="" method="post">
             
             <input type="text" name="valor" placeholder="Digite o valor">
-            <input type="text" name="mesesAmort" placeholder="quantos meses">
+            <input type="text" name="mesesAmortConst" placeholder="quantos meses">
+            <input type="text" name="TaxAmortConst" id="inputidtaxConst" placeholder="Taxa">
+            <input type="submit" name="enviar" value ="enviar"/>
         </form>
     </body>
 </html>

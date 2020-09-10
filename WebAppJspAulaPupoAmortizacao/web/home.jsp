@@ -26,8 +26,8 @@
             
         <h2> Equipe: </h2>
         <h3> Dario rodrigues de Melo</3>
-        <h3> Dario rodrigues de Melo</3>
-        <h3> Dario rodrigues de Melo</3>
-        <h3> Dario rodrigues de Melo</3>
+        <h3> Vinicios Marinho</3>
+        <h3> Vinicios da Silva</3>
+        <h3> Pedro Athanásio</3>
     </body>
 </html>

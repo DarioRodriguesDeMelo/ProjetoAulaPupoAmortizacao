@@ -18,7 +18,10 @@
         <form name="formAmortizAmerica" action="" method="post">
             
             <input type="text" name="valor" placeholder="Digite o valor">
-            <input type="text" name="mesesAmort" placeholder="quantos meses">
+            <input type="text" name="mesesAmortAmerica" placeholder="quantos meses">
+            <input type="text" name="TaxAmortAmerica" id="inputidtaxAmerica" placeholder="Taxa">
+            <input type="submit" name="enviar" value ="enviar"/>
+            
             
         </form>
         

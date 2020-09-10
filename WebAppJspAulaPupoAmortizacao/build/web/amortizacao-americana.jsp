@@ -16,10 +16,12 @@
         <h1>Amortização Americana</h1>
         
         <form name="formAmortizAmerica" action="" method="post">
-            
-            <input type="text" name="valor" placeholder="Digite o valor">
-            <input type="text" name="mesesAmortAmerica" placeholder="quantos meses">
-            <input type="text" name="TaxAmortAmerica" id="inputidtaxAmerica" placeholder="Taxa">
+            <label>Valor do Financiamento(R$):</label>
+            <input type="text" name="valor" placeholder="Digite o valor aqui" size="12" maxlength="12">
+            <label>Qant. de Parcelas:</label>
+            <input type="number" name="mesesAmortAmerica" placeholder="2-36"min="2" max="36" placeholder="2-36" size="2" maxlength="2">
+            <label>Taxa(%):</label>
+            <input type="text" name="TaxAmortAmerica" id="inputidtaxAmerica" size="2" maxlength="2" placeholder="0,1-20">
             <input type="submit" name="enviar" value ="enviar"/>
             
             

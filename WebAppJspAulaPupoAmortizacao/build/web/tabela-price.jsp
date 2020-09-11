@@ -42,25 +42,41 @@
             <%if (request.getParameter("valor") != null){%>
               
               <%
-              double Pmt;
-              float Pv = Float.parseFloat(request.getParameter("valor"));    
-              int n = Integer.parseInt(request.getParameter("MesesAmort"));
-              float i = Float.parseFloat(request.getParameter("TaxAmort"));
-              Pmt  =  Pv /((Math.pow(1+i,n)-1)/(Math.pow(1+i,n)*i));
+                double Pmt;
+                float Pv = Float.parseFloat(request.getParameter("valor"));    
+                int n = Integer.parseInt(request.getParameter("MesesAmort"));
+                float t = Float.parseFloat(request.getParameter("TaxAmort"));
+                t = t/100;
+                Pmt  =  Pv /((Math.pow(1+t,n)-1)/(Math.pow(1+t,n)*t));
               
-              out.println(String.format("%10.2f", Pmt));
-              
-              
-              
-	      
+                out.println(String.format("%,.2f", Pmt));
               %>
               <%--  mostrar formatação de número só com duas casas decimais --%>
-              <h2><%= String.format("%10.2f", Pmt) %></h2>
-              
-              <%--  fazer um for para a criação da tabela --%>
-              
-              
-              
+              <h2><%= String.format("%,.2f", Pmt) %></h2>
+              <table border="1">  <%-- criacao da tabela price --%>
+                  <tr>
+                   <th> N </th>
+                   <th>Prestação</th>
+                   <th>Amortização</th>
+                   <th>Juros</th>
+                   <th>Saldo Devedor</th>
+                  </tr>
+                  <tr>
+                      <td> 0 </td>
+                      <td> ---- </td>
+                      <td> ---- </td>
+                      <td> ---- </td>
+                      <td> <%= String.format("%,.2f", Pv)%> </td>
+                      
+                  </tr>
+                  <%--  fazer um for para a criação da tabela 
+                   <% for (int i = 1; i<=n ; i++) {%>                 
+                      <tr> <td> i </td>  <td> <%=String.format("%,.2f", Pmt)%> </td> </td>
+
+                  
+                 <% } %>
+                   --%>
+              </table>
               
               
               

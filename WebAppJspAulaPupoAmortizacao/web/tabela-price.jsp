@@ -49,10 +49,12 @@
                 t = t/100;
                 Pmt  =  Pv /((Math.pow(1+t,n)-1)/(Math.pow(1+t,n)*t));
               
-                out.println(String.format("%,.2f", Pmt));
+                
               %>
-              <%--  mostrar formatação de número só com duas casas decimais --%>
-              <h2><%= String.format("%,.2f", Pmt) %></h2>
+              <%--  mostrar formatação de número só com duas casas decimais 
+              <h2><%= String.format("%,.2f", Pmt) %></h2> --%>
+              <br/>
+              <h5> "Para um financiamento de + n + </5>
               <table border="1">  <%-- criacao da tabela price --%>
                   <tr>
                    <th> N </th>
@@ -69,13 +71,24 @@
                       <td> <%= String.format("%,.2f", Pv)%> </td>
                       
                   </tr>
-                  <%--  fazer um for para a criação da tabela 
-                   <% for (int i = 1; i<=n ; i++) {%>                 
-                      <tr> <td> i </td>  <td> <%=String.format("%,.2f", Pmt)%> </td> </td>
+                  <%--  fazer um for para a criação da tabela --%>
+                   <% for (int i = 1; i<=n ; i++){ 
+                     float saldev = Pv ;
+                      
+                      
+                    %>                 
+                      
+                   <tr>
+                        <td> <%=i%> </td> 
+                        <td> <%=String.format("%,.2f", Pmt)%> </td> <%-- valor da parcela essa é fixa--%>
+                        <td> <%=String.format("%,.2f", Pmt - (Pv*t))%> </td> <%-- Amortização= saldo devedor - juros --%>
+                        <td> <%=String.format("%,.2f", Pv*t)%> </td> <%-- Juros =  saldo devedor * taxa de juros  --%>
+                        <td> <%=String.format("%,.2f", Pv -(Pv -(Pv*t)))%> </td> <%-- saldo devedor= saldodevedor - amortizacao--%>
+                   </tr>
 
                   
-                 <% } %>
-                   --%>
+                   <% Pv = saldev -(saldev -(saldev*t)) ; }%>
+                   
               </table>
               
               

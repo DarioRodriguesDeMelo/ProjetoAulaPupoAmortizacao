@@ -43,7 +43,7 @@
               
               <%
                 double Pmt;
-                float Pv = Float.parseFloat(request.getParameter("valor"));    
+                double Pv = Float.parseFloat(request.getParameter("valor"));    
                 int n = Integer.parseInt(request.getParameter("MesesAmort"));
                 float t = Float.parseFloat(request.getParameter("TaxAmort"));
                 t = t/100;
@@ -73,21 +73,21 @@
                   </tr>
                   <%--  fazer um for para a criação da tabela --%>
                    <% for (int i = 1; i<=n ; i++){ 
-                     float saldev = Pv ;
+                    
                       
                       
                     %>                 
                       
                    <tr>
                         <td> <%=i%> </td> 
-                        <td> <%=String.format("%,.2f", Pmt)%> </td> <%-- valor da parcela essa é fixa--%>
+                        <td> <%=String.format("%,.2f", Pmt)%> </td> <%-- valor da parcela essa é fixa certo ---%>
                         <td> <%=String.format("%,.2f", Pmt - (Pv*t))%> </td> <%-- Amortização= saldo devedor - juros --%>
                         <td> <%=String.format("%,.2f", Pv*t)%> </td> <%-- Juros =  saldo devedor * taxa de juros  --%>
-                        <td> <%=String.format("%,.2f", Pv -(Pv -(Pv*t)))%> </td> <%-- saldo devedor= saldodevedor - amortizacao--%>
+                        <td> <%=String.format("%,.2f", Pv -(Pmt -(Pv*t)))%> </td> <%-- saldo devedor= saldodevedor - amortizacao--%>
                    </tr>
 
                   
-                   <% Pv = saldev -(saldev -(saldev*t)) ; }%>
+                   <% Pv = Pv -(Pmt -(Pv*t)) ; }%>
                    
               </table>
               

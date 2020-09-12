@@ -10,9 +10,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aula Pupo - Tabela Price</title>
+        
+        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao">
     </head>
     <body>
         <a href="index.jsp">Voltar</a>
+     <div>   
         <h1>Tabela Price</h1>
         
         <form name="formTabPrice" action="" method="post"> <%-- action vazio significa que vamos receber os dados na própria página--%>
@@ -54,7 +57,8 @@
               <%--  mostrar formatação de número só com duas casas decimais 
               <h2><%= String.format("%,.2f", Pmt) %></h2> --%>
               <br/>
-              <h5> "Para um financiamento de + n + </5>
+              <h4>Para um financiamento de R$  <%= String.format("%,.2f", Pv)  %> parcelados em <%= n %> vezes com taxa de <%= t*100 %> % ao mês</4>
+                  <hr/><br/>
               <table border="1">  <%-- criacao da tabela price --%>
                   <tr>
                    <th> N </th>
@@ -110,6 +114,6 @@
           
            
            
-           
+       </div>    
     </body>
 </html>

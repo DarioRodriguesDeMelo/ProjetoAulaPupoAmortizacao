@@ -10,14 +10,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aula Pupo-Amortização</title>
+        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao">
     </head>
     <body>
+       <Div>  
         <h1>Trabalho em JSP para Aula do Pupo</h1><br><br>
         
         <h2>Escolha um dos 3 tipos de financiamentos disponíveis<h2/><br/>
         <a href="amortizacao-americana.jsp">Amortização Americana</a><br>
         <a href="amortizacao-constante.jsp">Amortização Constante</a><br>
         <a href="tabela-price.jsp">Tabela Price</a><br><br/>
-        <a href="home.jsp">Sobre</a>
+        <a href="home.jsp">Sobre</a
+       </div> 
     </body>
 </html>

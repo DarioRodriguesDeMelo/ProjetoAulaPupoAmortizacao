@@ -10,9 +10,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aula Pupo - Amortização Constante</title>
+        
+        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao">
     </head>
     <body>
         <a href="index.jsp">Voltar</a>
+       <Div>
         <h1>Amortização Constante</h1>
         
         <form name="formAmortizConst" action="" method="post">
@@ -24,5 +27,6 @@
             <input type="text" name="TaxAmortConst" id="inputidtaxConst" size="2" maxlength="2" placeholder="0,1-20" required>
             <input type="submit" name="enviar" value ="enviar">
         </form>
+       </div>  
     </body>
 </html>

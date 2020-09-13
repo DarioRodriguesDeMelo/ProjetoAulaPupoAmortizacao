@@ -26,12 +26,12 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link
+    <%--<link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
-    />
+    /> --%>
     <title>Aula Pupo - Amortização Constante</title>
   </head>
   <body>
@@ -70,7 +70,7 @@
         placeholder="0,1-20"
         required
       />
-      <input type="submit" name="enviar" class="btn btn-dark" value="enviar" />
+      <input type="submit" name="enviar"  value="enviar" />
     </form>
 
     <div class="container">

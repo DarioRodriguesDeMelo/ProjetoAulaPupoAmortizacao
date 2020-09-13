@@ -33,9 +33,11 @@
                 double Pv = Float.parseFloat(request.getParameter("valor"));    
                 int n = Integer.parseInt(request.getParameter("MesesAmort"));
                 float t = Float.parseFloat(request.getParameter("TaxAmort"));
+                double amortizacao = Pv/n ;
                 t = t/100;
-                Pmt  =  Pv /((Math.pow(1+t,n)-1)/(Math.pow(1+t,n)*t));             
+                             
               %>
+              <%--Pmt  =  Pv /((Math.pow(1+t,n)-1)/(Math.pow(1+t,n)*t)); -- essa fórmula é para tabela é price - Agora temos que fazer a formula da trabela SAC --%>
               <%--  mostrar formatação de número só com duas casas decimais 
               <h2><%= String.format("%,.2f", Pmt) %></h2> --%>
               <br/>
@@ -60,12 +62,12 @@
                    <% for (int i = 1; i<=n ; i++){ %>                                   
                        <tr>
                         <td> <%=i%> </td> 
-                        <td> <%=String.format("%,.2f", Pmt)%> </td> <%-- valor da parcela essa é fixa certo ---%>
-                        <td> <%=String.format("%,.2f", Pmt - (Pv*t))%> </td> <%-- Amortização= saldo devedor - juros --%>
+                        <td> <%=String.format("%,.2f", amortizacao + (Pv*t))%> </td> <%-- prestação = Juros + amortização ---%>
+                        <td> <%=String.format("%,.2f", amortizacao )%> </td> <%-- Amortização = saldo devedor / número de parcelas --- ela é constante--%>
                         <td> <%=String.format("%,.2f", Pv*t)%> </td> <%-- Juros =  saldo devedor * taxa de juros  --%>
-                        <td> <%=String.format("%,.2f", Pv -(Pmt -(Pv*t)))%> </td> <%-- saldo devedor= saldodevedor - amortizacao--%>
+                        <td> <%=String.format("%,.2f", Pv - amortizacao)%> </td> <%-- saldo devedor = saldodevedor - amortizacao--%>
                        </tr>                 
-                   <% Pv = Pv -(Pmt -(Pv*t)) ; }%>                 
+                   <% Pv = Pv - amortizacao ; }%>                 
               </table>              
             <%}%>     
        </div>

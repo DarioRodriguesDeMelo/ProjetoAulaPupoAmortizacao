@@ -11,11 +11,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aula Pupo - Amortização Constante</title>
         
-        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao">
+        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
     </head>
     <body>
         <a href="index.jsp">Voltar</a>
-       <Div>
+       <Div id="central">
         <h1>Amortização Constante</h1>
         
         <form name="formAmortizConst" action="" method="post">

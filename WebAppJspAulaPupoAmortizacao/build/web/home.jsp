@@ -10,11 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aula Pupo - Sobre </title>
-        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao">
+        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
     </head>
     <body>
         <a href="index.jsp">Voltar</a>
-       <div> 
+       <div id="central"> 
         <h1>Apresentação do exercício de Amortização em JSP - Aula Pupo</h1><br>
          <h2>Objetivo</h2>
         <p> Esse projeto tem como objetivo implementar um webApp para Cálculos de diferentes

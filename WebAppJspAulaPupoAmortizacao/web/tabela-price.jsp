@@ -11,11 +11,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aula Pupo - Tabela Price</title>
         
-        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao">
+        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
     </head>
     <body>
         <a href="index.jsp">Voltar</a>
-     <div>   
+     <div id="central">   
         <h1>Tabela Price</h1>
         
         <form name="formTabPrice" action="" method="post"> <%-- action vazio significa que vamos receber os dados na própria página--%>

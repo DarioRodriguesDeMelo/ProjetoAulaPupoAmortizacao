@@ -10,10 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aula Pupo-Amortização</title>
-        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao">
+        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
     </head>
     <body>
-       <Div>  
+       <Div id="central">  
         <h1>Trabalho em JSP para Aula do Pupo</h1><br><br>
         
         <h2>Escolha um dos 3 tipos de financiamentos disponíveis<h2/><br/>

@@ -36,6 +36,7 @@
   </head>
   <body>
     <a href="index.jsp">Voltar</a>
+    <div id="central">
     <h1 class="my-5">Amortização Americana</h1>
 
     <form name="formAmortizAmerica" action="" method="post">
@@ -117,7 +118,7 @@
         </table>
       </div>
     </div>
-
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

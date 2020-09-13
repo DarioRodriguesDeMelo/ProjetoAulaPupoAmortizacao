@@ -10,7 +10,11 @@ and open the template in the editor.
 body {
       
      }
-
+form { display: flex;
+       flex-direction: column;
+         
+         
+     }
 
  div {
       width: 670px;

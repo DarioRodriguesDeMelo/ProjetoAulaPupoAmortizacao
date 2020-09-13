@@ -10,13 +10,23 @@ and open the template in the editor.
 body {
       
      }
-form { display: flex;
-       flex-direction: column;
+form { 
          
          
      }
+     
+ input {
+       border-radius: 4px;  
+         
+     }
 
+     
  div {
-      width: 670px;
+      width: 660px;
       margin : 0 auto 0 auto ;
+     }
+ table{
+     alignment-adjust: central ;
+     
+         
      }

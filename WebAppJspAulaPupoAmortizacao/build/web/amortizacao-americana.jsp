@@ -44,10 +44,11 @@
       <input
         type="text"
         name="valor"
-        placeholder="Digite o valor aqui"
+        
         size="12"
         maxlength="12"
         required
+        pattern="[0-9]+$"
       />
       <label>Qant. de Parcelas:</label>
       <input
@@ -70,6 +71,7 @@
         maxlength="2"
         placeholder="0,1-20"
         required
+        pattern="[0-9]+$"
       />
       <input type="submit" name="enviar" class="btn btn-dark" value="enviar" />
     </form>

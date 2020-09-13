@@ -76,8 +76,12 @@
       />
       <input type="submit" name="enviar" class="btn btn-dark" value="enviar" />
     </form>
-
+    <br/>
+     <h3> Para um financiamento de R$  <%= valor  %> parcelados em <%= parcelas %> vezes com taxa de <%= taxa %> % ao mês </h3>
+    <hr/>
+    <br/>
     <div class="container">
+        
       <div class="row">
         <table class="col-6 table table-bordered mt-5">
           <thead>

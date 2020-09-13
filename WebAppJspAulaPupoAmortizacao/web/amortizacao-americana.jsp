@@ -33,6 +33,7 @@
       crossorigin="anonymous"
     />
     <title>Aula Pupo - Amortização Americana</title>
+    <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
   </head>
   <body>
     <a href="index.jsp">Voltar</a>

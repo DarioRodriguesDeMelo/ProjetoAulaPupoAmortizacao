@@ -1,7 +1,7 @@
 <%-- 
     Document   : home
     Created on : 8 de set de 2020, 18:06:12
-    Author     : Dario
+    Author     : Dario e Pedro
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

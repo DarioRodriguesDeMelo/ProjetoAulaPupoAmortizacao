@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
-    int valor;
+    double valor;
     int parcelas;
     int taxa;
     try {
@@ -20,7 +20,7 @@
         taxa = 0;
     }
 
-    float juros = valor * taxa / 100;
+    double juros = valor * taxa / 100;
 %>
 <!DOCTYPE html>
 <html>
@@ -78,7 +78,7 @@
       <input type="submit" name="enviar" class="btn btn-dark" value="enviar" />
     </form>
     <br/>
-     <h3> Para um financiamento de R$  <%= valor  %> parcelados em <%= parcelas %> vezes com taxa de <%= taxa %> % ao mês </h3>
+     <h3> Para um financiamento de R$  <%= String.format("%,.2f", valor) %> parcelados em <%= parcelas %> vezes com taxa de <%= taxa %> % ao mês </h3>
     <hr/>
     <br/>
     <div class="container">
@@ -99,7 +99,7 @@
              <%if(request.getParameter("valor") != null) {%>
                 <tr>
                     <td>0</td>
-                    <td><%= valor %></td>
+                    <td><%= String.format("%,.2f", valor) %></td>
                     <td>-</td>
                     <td><%= taxa%>%</td>
                     <td>-</td>
@@ -107,19 +107,19 @@
                 <% for(int i = 1; i < parcelas; i++) { %>
                     <tr>
                         <td><%=i%></td>
-                        <td><%=valor%></td>
+                        <td><%=String.format("%,.2f", valor)%></td>
                         <td>-</td>
-                        <td><%= juros %></td>
-                        <td><%= juros %></td>
+                        <td><%= String.format("%,.2f", juros) %></td>
+                        <td><%= String.format("%,.2f", juros) %></td>
                     </tr>
                 <% } %>
                 
                 <tr>
                     <td><%=parcelas%></td>
-                    <td><%= valor %></td>
-                    <td><%= valor %></td>
-                    <td><%= juros %></td>
-                    <td><%= (valor+juros) %></td>
+                    <td><%= "0,00" %></td>                        <%-- <td><%= valor %></td>  --%>
+                    <td><%= String.format("%,.2f", valor) %></td>
+                    <td><%= String.format("%,.2f", juros) %></td>
+                    <td><%= String.format("%,.2f", (valor+juros)) %></td>
                  </tr>
             <% } %>
           </tbody>

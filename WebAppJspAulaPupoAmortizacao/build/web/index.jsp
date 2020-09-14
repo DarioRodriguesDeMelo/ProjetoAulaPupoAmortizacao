@@ -22,5 +22,6 @@
         <a href="tabela-price.jsp">Tabela Price</a><br><br/>
         <a href="home.jsp">Sobre</a
        </div> 
+       <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>

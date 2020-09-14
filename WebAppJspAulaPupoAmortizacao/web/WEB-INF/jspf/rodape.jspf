@@ -1,0 +1,4 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<hr/>
+<Div><h2>Desenvolvido por Grupo Protótipos</h2></div>

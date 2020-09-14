@@ -31,6 +31,7 @@
         <h3> Vinicios Marinho</3>
         <h3> Vinicios da Silva</3>
         <h3> Pedro Athanásio</3>
-       </Div>     
+       </Div>  
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>

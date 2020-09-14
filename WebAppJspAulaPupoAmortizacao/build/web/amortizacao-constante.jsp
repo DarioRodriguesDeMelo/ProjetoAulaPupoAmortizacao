@@ -13,8 +13,9 @@
         <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
     </head>
     <body>
-        <a href="index.jsp">Voltar</a>
-      <div id="central">  
+        
+      <div id="central"> 
+          <%@include file="WEB-INF/jspf/menu.jspf" %>
           <h1>Amortização Constante</h1>
         
             <form name="formAmortizConst" action="" method="post">
@@ -69,8 +70,9 @@
                        </tr>                 
                    <% Pv = Pv - amortizacao ; }%>                 
               </table>              
-            <%}%>     
+            <%}%> 
+          <%@include file="WEB-INF/jspf/rodape.jspf" %>  
        </div>
-       <%@include file="WEB-INF/jspf/rodape.jspf" %>
+       
     </body>
 </html>

@@ -13,8 +13,9 @@
         <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
     </head>
     <body>
-        <a href="index.jsp">Voltar</a>
+        
        <div id="central"> 
+         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <h1>Apresentação do exercício de Amortização em JSP - Aula Pupo</h1><br>
          <h2>Objetivo</h2>
         <p> Esse projeto tem como objetivo implementar um webApp para Cálculos de diferentes
@@ -27,11 +28,10 @@
             <p>A aplicação disponibiliza três tipos de cálculo de amortização <p><br>
             
         <h2> Equipe: </h2>
-        <h3> Dario rodrigues de Melo</3>
-        <h3> Vinicios Marinho</3>
-        <h3> Vinicios da Silva</3>
-        <h3> Pedro Athanásio</3>
-       </Div>  
+        <h3> Dario Rodrigues de Melo &emsp; &emsp; Vinícios Marinho Espíndola</3>
+        <h3> Vinicios da Silva &emsp; &emsp; &emsp; &emsp; Pedro Athanásio</3>
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
+       </Div>  
+        
     </body>
 </html>

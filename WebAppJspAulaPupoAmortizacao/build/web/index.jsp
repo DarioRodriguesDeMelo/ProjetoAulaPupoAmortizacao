@@ -14,14 +14,16 @@
     </head>
     <body>
        <Div id="central">  
+         <%@include file="WEB-INF/jspf/menu.jspf" %>  
         <h1>Trabalho em JSP para Aula do Pupo</h1><br><br>
         
         <h2>Escolha um dos 3 tipos de financiamentos disponíveis<h2/><br/>
         <a href="amortizacao-americana.jsp">Amortização Americana</a><br>
         <a href="amortizacao-constante.jsp">Amortização Constante</a><br>
         <a href="tabela-price.jsp">Tabela Price</a><br><br/>
-        <a href="home.jsp">Sobre</a
+        <a href="home.jsp">Sobre o Projeto</a>
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
        </div> 
-       <%@include file="WEB-INF/jspf/rodape.jspf" %>
+       
     </body>
 </html>

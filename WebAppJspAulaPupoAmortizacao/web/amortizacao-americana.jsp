@@ -36,8 +36,9 @@
     <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
   </head>
   <body>
-    <a href="index.jsp">Voltar</a>
+    
     <div id="central">
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
     <h1 class="my-5">Amortização Americana</h1>
 
     <form name="formAmortizAmerica" action="" method="post">
@@ -125,6 +126,7 @@
         </table>
       </div>
     </div>
+     <%@include file="WEB-INF/jspf/rodape.jspf" %>     
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -141,6 +143,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <%@include file="WEB-INF/jspf/rodape.jspf" %>
+    
   </body>
 </html>

@@ -23,7 +23,7 @@
             
         <h2> Equipe: </h2>
         <h3> Dario Rodrigues de Melo &emsp; &emsp; Vinícios Marinho Espíndola</h3>
-        <h3> Vinicios da Silva &emsp; &emsp; &emsp; &emsp; &emsp;Pedro Athanásio</h3>
+        <h3> Vinicius da Silva &emsp; &emsp; &emsp; &emsp; &emsp;Pedro Henrique Athanásio</h3>
         
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
        </div> 

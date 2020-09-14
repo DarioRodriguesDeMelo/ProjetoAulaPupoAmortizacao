@@ -24,12 +24,7 @@
             utilizando Java server pages. Ensinamentos esses dados pelo Professor Pupo na desciplina 
             de Programação orientada a objetos da  Fatec Praia Grande. <p><br>
         
-            <h2>O que faz a aplicação</h2>
-            <p>A aplicação disponibiliza três tipos de cálculo de amortização <p><br>
             
-        <h2> Equipe: </h2>
-        <h3> Dario Rodrigues de Melo &emsp; &emsp; Vinícios Marinho Espíndola</3>
-        <h3> Vinicios da Silva &emsp; &emsp; &emsp; &emsp; Pedro Athanásio</3>
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
        </Div>  
         

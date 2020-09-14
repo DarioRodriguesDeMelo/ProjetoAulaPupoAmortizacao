@@ -17,11 +17,14 @@
          <%@include file="WEB-INF/jspf/menu.jspf" %>  
         <h1>Trabalho em JSP para Aula do Pupo</h1><br><br>
         
-        <h2>Escolha um dos 3 tipos de financiamentos disponíveis<h2/><br/>
-        <a href="amortizacao-americana.jsp">Amortização Americana</a><br>
-        <a href="amortizacao-constante.jsp">Amortização Constante</a><br>
-        <a href="tabela-price.jsp">Tabela Price</a><br><br/>
-        <a href="home.jsp">Sobre o Projeto</a>
+        
+        <h2>O que faz a aplicação</h2>
+            <p>A aplicação disponibiliza três tipos de cálculo de amortização <p><br>
+            
+        <h2> Equipe: </h2>
+        <h3> Dario Rodrigues de Melo &emsp; &emsp; Vinícios Marinho Espíndola</h3>
+        <h3> Vinicios da Silva &emsp; &emsp; &emsp; &emsp; &emsp;Pedro Athanásio</h3>
+        
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
        </div> 
        

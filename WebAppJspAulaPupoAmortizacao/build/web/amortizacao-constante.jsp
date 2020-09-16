@@ -3,15 +3,7 @@
     Created on : 9 de set de 2020, 09:09:25
     Author     : Vinicius Da Silva
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Aula Pupo - Amortização Constante</title>
-        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
-    </head>
+<%@include file="WEB-INF/jspf/header.jspf" %>
     <body>
         
       <div id="central"> 
@@ -38,17 +30,17 @@
                 t = t/100;
                              
               %>
-              <%--Pmt  =  Pv /((Math.pow(1+t,n)-1)/(Math.pow(1+t,n)*t)); -- essa fórmula é para tabela é price - Agora temos que fazer a formula da trabela SAC --%>
-              <%--  mostrar formatação de número só com duas casas decimais 
+              <%--Pmt  =  Pv /((Math.pow(1+t,n)-1)/(Math.pow(1+t,n)*t)); -- essa f�rmula � para tabela � price - Agora temos que fazer a formula da trabela SAC --%>
+              <%--  mostrar formata��o de n�mero s� com duas casas decimais 
               <h2><%= String.format("%,.2f", Pmt) %></h2> --%>
               <br/>
-              <h4>Para um financiamento de R$  <%= String.format("%,.2f", Pv)  %> parcelados em <%= n %> vezes com taxa de <%= t*100 %> % ao mês</4>
+              <h4>Para um financiamento de R$  <%= String.format("%,.2f", Pv)  %> parcelados em <%= n %> vezes com taxa de <%= t*100 %> % ao m�s</4>
                   <hr/><br/>
               <table border="1">  <%-- criacao da tabela price --%>
                   <tr>
                    <th> N </th>
-                   <th>Prestação</th>
-                   <th>Amortização</th>
+                   <th>Presta��o</th>
+                   <th>Amortiza��o</th>
                    <th>Juros</th>
                    <th>Saldo Devedor</th>
                   </tr>
@@ -59,12 +51,12 @@
                       <td> ---- </td>
                       <td> <%= String.format("%,.2f", Pv)%> </td>                     
                   </tr>
-                     <%--  fazer um for para a criação da tabela --%><%-- alterar formula para tabela SAC--%>
+                     <%--  fazer um for para a cria��o da tabela --%><%-- alterar formula para tabela SAC--%>
                    <% for (int i = 1; i<=n ; i++){ %>                                   
                        <tr>
                         <td> <%=i%> </td> 
-                        <td> <%=String.format("%,.2f", amortizacao + (Pv*t))%> </td> <%-- prestação = Juros + amortização ---%>
-                        <td> <%=String.format("%,.2f", amortizacao )%> </td> <%-- Amortização = saldo devedor / número de parcelas --- ela é constante--%>
+                        <td> <%=String.format("%,.2f", amortizacao + (Pv*t))%> </td> <%-- presta��o = Juros + amortiza��o ---%>
+                        <td> <%=String.format("%,.2f", amortizacao )%> </td> <%-- Amortiza��o = saldo devedor / n�mero de parcelas --- ela � constante--%>
                         <td> <%=String.format("%,.2f", Pv*t)%> </td> <%-- Juros =  saldo devedor * taxa de juros  --%>
                         <td> <%=String.format("%,.2f", Pv - amortizacao)%> </td> <%-- saldo devedor = saldodevedor - amortizacao--%>
                        </tr>                 

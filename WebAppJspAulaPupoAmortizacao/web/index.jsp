@@ -4,14 +4,7 @@
     Author     : Dario e Pedro
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Aula Pupo-Amortização</title>
-        <link rel ="Stylesheet" type="text/css" href="Css_Amortizacao.css">
-    </head>
+<%@include file="WEB-INF/jspf/header.jspf" %>
     <body>
        <Div id="central">  
          <%@include file="WEB-INF/jspf/menu.jspf" %>  

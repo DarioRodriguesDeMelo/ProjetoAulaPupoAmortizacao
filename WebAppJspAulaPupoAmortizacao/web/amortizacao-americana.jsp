@@ -1,8 +1,9 @@
 <%-- 
     Document   : amortizacao-americana
     Created on : 9 de set de 2020, 09:09:51
-    Author     : Vin�cius Marinho
+    Author     : Vinï¿½cius Marinho
 --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     double valor;
     int parcelas;
@@ -66,7 +67,7 @@
     <br/>
     <%if(request.getParameter("valor") != null) {%>
     
-        <h4> Para um financiamento de R$  <%= String.format("%,.2f", valor) %> parcelados em <%= parcelas %> vezes com taxa de <%= taxa %> % ao m�s </h4>
+        <h4> Para um financiamento de R$  <%= String.format("%,.2f", valor) %> parcelados em <%= parcelas %> vezes com taxa de <%= taxa %> % ao mï¿½s </h4>
         <hr/>
         <br/>
         <div class="container">
@@ -75,9 +76,9 @@
             <table border="1">
               <thead>
                 <tr>
-                  <th>Per�odo</th>
+                  <th>Perï¿½odo</th>
                   <th>Saldo Devedor</th>
-                  <th>Amortiza��o</th>
+                  <th>Amortizaï¿½ï¿½o</th>
                   <th>Juros</th>
                   <th>PMT</th>
                 </tr>

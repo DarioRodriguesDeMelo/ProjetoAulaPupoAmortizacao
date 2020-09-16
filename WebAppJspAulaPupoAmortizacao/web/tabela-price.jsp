@@ -3,7 +3,7 @@
     Created on : 9 de set de 2020, 09:11:09
     Author     : Dario e Pedro
 --%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="WEB-INF/jspf/header.jspf" %>
     <body>
        
@@ -12,7 +12,7 @@
            <%@include file="WEB-INF/jspf/menu.jspf" %>
            <h1>Tabela Price</h1>
         
-            <form name="formTabPrice" action="" method="post"> <%-- action vazio significa que vamos receber os dados na própria página--%>
+            <form name="formTabPrice" action="" method="post"> <%-- action vazio significa que vamos receber os dados na prï¿½pria pï¿½gina--%>
                <label>Valor do Financiamento(R$):</label>
                <input type="text" name="valor" min="100.00"  size="12" maxlength="12" required pattern="[0-9]+$">
                <!--<input type="number" min="0.00" max="999,999.99" step="0.01" placeholder="Digite o valor" size="10" maxlength="10"/> -->
@@ -30,7 +30,7 @@
         
               Pmt = Pv / ((((1+i)^n)-1)/(((1+i)^n)*i))
               teste passandoa formula pra java
-              fazendo o cálculo por etapas
+              fazendo o cï¿½lculo por etapas
               Pmt  =  Pv /((Math.pow(1+i,n)-1)/(Math.pow(1+i,n)*i))
                   --%>
                <%--incio do scriptlet jsp --%>         
@@ -44,16 +44,16 @@
                 t = t/100;
                 Pmt  =  Pv /((Math.pow(1+t,n)-1)/(Math.pow(1+t,n)*t));             
               %>
-              <%--  mostrar formatação de número só com duas casas decimais 
+              <%--  mostrar formataï¿½ï¿½o de nï¿½mero sï¿½ com duas casas decimais 
               <h2><%= String.format("%,.2f", Pmt) %></h2> --%>
               <br/>
-              <h4>Para um financiamento de R$  <%= String.format("%,.2f", Pv)  %> parcelados em <%= n %> vezes com taxa de <%= t*100 %> % ao mês</4>
+              <h4>Para um financiamento de R$  <%= String.format("%,.2f", Pv)  %> parcelados em <%= n %> vezes com taxa de <%= t*100 %> % ao mï¿½s</4>
                   <hr/><br/>
               <table border="1">  <%-- criacao da tabela price --%>
                   <tr>
                    <th> N </th>
-                   <th>Prestação</th>
-                   <th>Amortização</th>
+                   <th>Prestaï¿½ï¿½o</th>
+                   <th>Amortizaï¿½ï¿½o</th>
                    <th>Juros</th>
                    <th>Saldo Devedor</th>
                   </tr>
@@ -64,12 +64,12 @@
                       <td> ---- </td>
                       <td> <%= String.format("%,.2f", Pv)%> </td>                     
                   </tr>
-                     <%--  fazer um for para a criação da tabela --%>
+                     <%--  fazer um for para a criaï¿½ï¿½o da tabela --%>
                    <% for (int i = 1; i<=n ; i++){ %>                                   
                        <tr>
                         <td> <%=i%> </td> 
-                        <td> <%=String.format("%,.2f", Pmt)%> </td> <%-- valor da parcela essa é fixa certo ---%>
-                        <td> <%=String.format("%,.2f", Pmt - (Pv*t))%> </td> <%-- Amortização= saldo devedor - juros --%>
+                        <td> <%=String.format("%,.2f", Pmt)%> </td> <%-- valor da parcela essa ï¿½ fixa certo ---%>
+                        <td> <%=String.format("%,.2f", Pmt - (Pv*t))%> </td> <%-- Amortizaï¿½ï¿½o= saldo devedor - juros --%>
                         <td> <%=String.format("%,.2f", Pv*t)%> </td> <%-- Juros =  saldo devedor * taxa de juros  --%>
                         <td> <%=String.format("%,.2f", Pv -(Pmt -(Pv*t)))%> </td> <%-- saldo devedor= saldodevedor - amortizacao--%>
                        </tr>                 

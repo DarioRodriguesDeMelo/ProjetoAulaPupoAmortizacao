@@ -3,7 +3,7 @@
     Created on : 8 de set de 2020, 18:37:35
     Author     : Dario e Pedro
 --%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="WEB-INF/jspf/header.jspf" %>
     <body>
        <Div id="central">  
